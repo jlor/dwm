@@ -8,6 +8,27 @@ Requirements
 In order to build dwm you need the Xlib header files.
 
 
+Fedora installation
+------------
+This project has been configured to run with X11 libraries located in Fedora
+locations.
+From https://jacekkowalczyk.wordpress.com/2018/11/20/how-to-install-dwm-from-suckless-org-at-fedora-29/ 
+```
+sudo dnf install dwm git dmenu st
+mkdir ~/git && cd ~/git
+git clone git://git.suckless.org/dwm
+cd dwm 
+
+sudo dnf install libX11-devel
+sudo dnf install libXft-devel
+sudo dnf install libXinerama-devel
+
+sudo dnf install nitrogen
+sudo dnf install xorg-x11-xinit-session
+```
+
+
+
 Installation
 ------------
 Edit config.mk to match your local setup (dwm is installed into
